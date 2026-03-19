@@ -1,0 +1,34 @@
+.overviewBox {
+  background: #fff;
+  height: 180px;
+  overflow-y: auto;
+  border-radius: 12px;
+  border: 0.5px solid #e8e8e8;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.overviewBox > label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+/* expense row */
+.expenseBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 0.5px solid #f0f0ee;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.expenseBox:last-child {
+  border-bottom: none;
+}

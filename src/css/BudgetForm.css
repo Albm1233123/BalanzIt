@@ -1,0 +1,170 @@
+.budget-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* form */
+.budget-form {
+  background: #fff;
+  border-radius: 12px;
+  border: 0.5px solid #e8e8e8;
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+.budget-form h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+/* timebtns */
+.timeBtn {
+  background: transparent;
+  border: 0.5px solid #d0d0d0;
+  color: #555;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-right: 6px;
+  margin-bottom: 1rem;
+}
+
+.timeBtn:hover {
+  background: #f0f0ee;
+  border-color: #bbb;
+  color: #1a1a1a;
+}
+
+/* form */
+.budget-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.budget-form label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.budget-form input[type='number'] {
+  width: 100%;
+  height: 40px;
+  background: #f5f5f3;
+  border: 0.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.budget-form input[type='number']:focus {
+  border-color: #aaa;
+}
+
+/* remaining */
+.remaining-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1D9E75;
+  margin-top: 0.25rem;
+}
+
+/* expenses */
+.expenses-section {
+  background: #fff;
+  border-radius: 12px;
+  border: 0.5px solid #e8e8e8;
+  padding: 1.5rem;
+  height: 150px;
+  margin-bottom: 1.25rem;
+  overflow-y: auto;
+}
+
+.expense-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.75fr auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 0.5px solid #f0f0ee;
+}
+
+.expenses-section input[type='text'] {
+  width: 30%;
+  height: 35px;
+  background: #f5f5f3;
+  border: 0.5px solid #e0e0e0;
+  padding: 0 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.expenses-section input[type='number'] {
+  width: 30%;
+  height: 35px;
+  background: #f5f5f3;
+  border: 0.5px solid #e0e0e0;
+  padding: 0 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+
+/* Delete button */
+.deleteBtn {
+  background: transparent;
+  border: 0.5px solid #e0e0e0;
+  color: #D85A30;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  padding: 6px 1px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.deleteBtn:hover {
+  background: #fff0ec;
+  border-color: #D85A30;
+}
+
+/* Add Expense button */
+.addBtn {
+  margin-top: 1rem;
+  background: transparent;
+  border: 0.5px solid #d0d0d0;
+  color: #555;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background: #f0f0ee;
+  border-color: #bbb;
+  color: #1a1a1a;
+}
