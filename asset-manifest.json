@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Albm1233123/BalanzIt.git/static/css/main.a76f2dd8.css",
+    "main.js": "/Albm1233123/BalanzIt.git/static/js/main.0d6ca663.js",
+    "static/js/977.9b736b31.chunk.js": "/Albm1233123/BalanzIt.git/static/js/977.9b736b31.chunk.js",
+    "static/js/732.f314188f.chunk.js": "/Albm1233123/BalanzIt.git/static/js/732.f314188f.chunk.js",
+    "static/js/453.922ba481.chunk.js": "/Albm1233123/BalanzIt.git/static/js/453.922ba481.chunk.js",
+    "index.html": "/Albm1233123/BalanzIt.git/index.html",
+    "main.a76f2dd8.css.map": "/Albm1233123/BalanzIt.git/static/css/main.a76f2dd8.css.map",
+    "main.0d6ca663.js.map": "/Albm1233123/BalanzIt.git/static/js/main.0d6ca663.js.map",
+    "977.9b736b31.chunk.js.map": "/Albm1233123/BalanzIt.git/static/js/977.9b736b31.chunk.js.map",
+    "732.f314188f.chunk.js.map": "/Albm1233123/BalanzIt.git/static/js/732.f314188f.chunk.js.map",
+    "453.922ba481.chunk.js.map": "/Albm1233123/BalanzIt.git/static/js/453.922ba481.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a76f2dd8.css",
+    "static/js/main.0d6ca663.js"
+  ]
+}
