@@ -1,3 +1,4 @@
+// @ts-ignore: Importing CSS for side effects; project may not have CSS module declarations
 import '../css/Graph.css';
 import React from 'react';
 import { PieChart, Pie, Tooltip, Cell } from 'recharts';

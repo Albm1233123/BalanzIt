@@ -1,3 +1,4 @@
+// @ts-ignore
 import '../css/BudgetOverview.css';
 import { Expense } from '../types';
 

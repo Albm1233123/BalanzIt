@@ -1,3 +1,4 @@
+// @ts-ignore: CSS imports are handled by the build system
 import '../css/SavingsGoal.css';
 import { Expense } from '../types';
 

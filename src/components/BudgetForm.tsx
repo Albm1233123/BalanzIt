@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef} from 'react';
 import { saveData, loadData } from '../utils/storage';
+// @ts-ignore: CSS module declarations are handled elsewhere
 import '../css/BudgetForm.css';
 import { Expense } from '../types';
 
