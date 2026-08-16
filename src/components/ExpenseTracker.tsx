@@ -1,7 +1,8 @@
 import React from "react";
-import { loadData } from "../utils/storage";
+import { loadData, saveData } from "../utils/storage";
 import { Expense } from "../types";
 import "../css/ExpenseTracker.css";
+//dosent save yet
 
 interface expenseFormProps {
     expensePlan: "day" | "week" | "month" | "year";
@@ -28,6 +29,7 @@ function ExpenseTracker({
     React.useEffect(() => {
         const savedBudget = loadData(`${expensePlan}-budget`);
         const savedItems = loadData(`${expensePlan}-expenses`);
+        const savedActualAmounts = loadData(`${expensePlan}-actual-expenses`);
 
         if (savedBudget !== null) {
             setBudget(Number(savedBudget));
@@ -37,6 +39,12 @@ function ExpenseTracker({
             setBudgetItems(savedItems);
         } else {
             setBudgetItems([]);
+        }
+
+        if (savedActualAmounts !== null) {
+            setActualAmounts(savedActualAmounts);
+        } else {
+            setActualAmounts({});
         }
     }, [expensePlan]);
 
@@ -106,11 +114,14 @@ function ExpenseTracker({
                                             e.target.value === ""
                                                 ? 0
                                                 : Number(e.target.value);
-
-                                        setActualAmounts({
+                                                
+                                        const updatedAmounts = {
                                             ...actualAmounts,
                                             [index]: value
-                                        });
+                                        };
+
+                                        setActualAmounts(updatedAmounts);
+                                        saveData(`${expensePlan}-actual-expenses`, updatedAmounts);
                                     }}
                                 />
 
