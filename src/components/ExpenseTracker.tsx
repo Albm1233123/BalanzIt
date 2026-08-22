@@ -2,6 +2,7 @@ import React from "react";
 import { loadData, saveData } from "../utils/storage";
 import { Expense } from "../types";
 import "../css/ExpenseTracker.css";
+import { generatePDFRealExpense } from "../utils/pdf/realexpensePDF";
 //dosent save yet
 
 interface expenseFormProps {
@@ -23,8 +24,9 @@ function ExpenseTracker({
         [key: number]: number;
     }>({});
 
-    const totalActual = Object.values(actualAmounts).reduce(
-    (total, amount) => total + amount,0);
+    const totalActual = budgetItems.reduce((total, item, index) => {
+        return total + (actualAmounts[index] || 0);
+    }, 0);
 
     React.useEffect(() => {
         const savedBudget = loadData(`${expensePlan}-budget`);
@@ -136,6 +138,15 @@ function ExpenseTracker({
             </form>
 
             <label className="expense-label">Total Actual: ${totalActual}</label>
+            
+            <br></br>
+            <button
+                className="pdfBtn"
+                type="button"
+                onClick={() => generatePDFRealExpense(budgetItems, actualAmounts, budget, expensePlan)}
+            >
+                Generate PDF
+            </button>
         </div>
     );
 }
