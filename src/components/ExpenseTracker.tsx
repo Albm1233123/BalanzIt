@@ -2,6 +2,7 @@ import React from "react";
 import { loadData, saveData } from "../utils/storage";
 import { Expense } from "../types";
 import "../css/ExpenseTracker.css";
+import { Notes } from './Notes';
 import { generatePDFRealExpense } from "../utils/pdf/realexpensePDF";
 //dosent save yet
 
@@ -139,7 +140,10 @@ function ExpenseTracker({
 
             <label className="expense-label">Total Actual: ${totalActual}</label>
             
-            <br></br>
+            <div>
+                <Notes />
+            </div>
+            
             <button
                 className="pdfBtn"
                 type="button"

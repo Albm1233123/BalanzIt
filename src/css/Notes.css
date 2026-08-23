@@ -1,0 +1,25 @@
+textarea {
+  overflow-y: auto; 
+  resize: none; 
+  width: 100%;
+  max-width: 500px;
+  height: 20px;
+  margin-left: 20px; 
+}
+
+.notes-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.notes-label {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.notes-textarea {
+    flex: 1;
+    padding: 10px;
+}

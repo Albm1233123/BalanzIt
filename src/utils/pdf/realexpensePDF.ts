@@ -62,10 +62,20 @@ export const generatePDFRealExpense = async (
       tableY = margin;
     }
   });
-  
+
+  // top totals
   doc.text(`Total of actual expense: $${totalActual}`, infoX, infoY + 10);
   doc.text(`Total of Remaining expense: $${budget - totalActual}`, infoX, infoY + 15);
   
+  const notes = localStorage.getItem("savedText") ?? "";
+  
+  // extra notes
+  doc.setFont("helvetica", "bold");
+  doc.text("Extra Notes:", 20, tableY);
+  tableY += 7;
+  doc.setFont("helvetica", "normal");
+  doc.text(notes || "No notes", 20, tableY);
+
 
   window.open(doc.output("bloburl"));
 };
