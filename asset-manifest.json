@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/BalanzIt/static/css/main.30eceeea.css",
-    "main.js": "/BalanzIt/static/js/main.feeb5cb4.js",
+    "main.css": "/BalanzIt/static/css/main.b0fabf6b.css",
+    "main.js": "/BalanzIt/static/js/main.0f4ac1ee.js",
     "static/js/977.9b736b31.chunk.js": "/BalanzIt/static/js/977.9b736b31.chunk.js",
     "static/js/732.f314188f.chunk.js": "/BalanzIt/static/js/732.f314188f.chunk.js",
     "static/js/453.922ba481.chunk.js": "/BalanzIt/static/js/453.922ba481.chunk.js",
     "index.html": "/BalanzIt/index.html",
-    "main.30eceeea.css.map": "/BalanzIt/static/css/main.30eceeea.css.map",
-    "main.feeb5cb4.js.map": "/BalanzIt/static/js/main.feeb5cb4.js.map",
+    "main.b0fabf6b.css.map": "/BalanzIt/static/css/main.b0fabf6b.css.map",
+    "main.0f4ac1ee.js.map": "/BalanzIt/static/js/main.0f4ac1ee.js.map",
     "977.9b736b31.chunk.js.map": "/BalanzIt/static/js/977.9b736b31.chunk.js.map",
     "732.f314188f.chunk.js.map": "/BalanzIt/static/js/732.f314188f.chunk.js.map",
     "453.922ba481.chunk.js.map": "/BalanzIt/static/js/453.922ba481.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30eceeea.css",
-    "static/js/main.feeb5cb4.js"
+    "static/css/main.b0fabf6b.css",
+    "static/js/main.0f4ac1ee.js"
   ]
 }
