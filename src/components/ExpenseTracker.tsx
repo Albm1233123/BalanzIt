@@ -3,6 +3,7 @@ import { loadData, saveData } from "../utils/storage";
 import { Expense } from "../types";
 import "../css/ExpenseTracker.css";
 import { Notes } from './Notes';
+import { TookFromSavings } from "./TookFromSavings";
 import { generatePDFRealExpense } from "../utils/pdf/realexpensePDF";
 //dosent save yet
 
@@ -142,6 +143,10 @@ function ExpenseTracker({
             
             <div>
                 <Notes />
+            </div>
+
+            <div>
+                <TookFromSavings />
             </div>
             
             <button

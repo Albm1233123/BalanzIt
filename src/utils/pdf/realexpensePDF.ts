@@ -17,7 +17,7 @@ export const generatePDFRealExpense = async (
 
   // plan info
   doc.setFontSize(12);
-  let infoX = 50;
+  let infoX = 40;
   let infoY = 40;
 
   doc.text(`Plan: per ${plan}`, infoX, infoY);
@@ -64,8 +64,17 @@ export const generatePDFRealExpense = async (
   });
 
   // top totals
+  const remaining = Math.max(0, budget - totalActual);
   doc.text(`Total of actual expense: $${totalActual}`, infoX, infoY + 10);
-  doc.text(`Total of Remaining expense: $${budget - totalActual}`, infoX, infoY + 15);
+  doc.text(`Total of Remaining expense: $${remaining}`, infoX, infoY + 15);
+
+  let takenSavings = budget - totalActual;
+
+  if(takenSavings > 0) {
+    takenSavings = 0;
+  } 
+
+  doc.text(`Total taken from savings: $${takenSavings}`, infoX + 70, infoY + 15)
   
   const notes = localStorage.getItem("savedText") ?? "";
   
@@ -75,6 +84,8 @@ export const generatePDFRealExpense = async (
   tableY += 7;
   doc.setFont("helvetica", "normal");
   doc.text(notes || "No notes", 20, tableY);
+
+
 
 
   window.open(doc.output("bloburl"));
